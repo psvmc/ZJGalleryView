@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZJGalleryView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HcB-jl-U79">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HcB-jl-U79" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AtV-lg-kH8"/>
+                            <constraint firstItem="HcB-jl-U79" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="F3B-2p-qzJ"/>
+                            <constraint firstItem="HcB-jl-U79" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="v8j-Oi-Fo9"/>
+                            <constraint firstItem="HcB-jl-U79" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zTc-zp-3AC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imagesView" destination="HcB-jl-U79" id="JQR-s6-K8q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.59999999999999" y="274.06"/>
+        </scene>
+    </scenes>
+</document>
