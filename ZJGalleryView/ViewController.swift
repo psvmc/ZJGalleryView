@@ -28,8 +28,8 @@ class ViewController: UIViewController,ZJGalleryViewDelegate,ZJGalleryViewDataSo
         super.didReceiveMemoryWarning()
     }
     
-    override func viewWillAppear(animated: Bool) {
-        let galleryView = ZJGalleryView(frame: CGRectMake(0,0,self.view.bounds.width,self.view.bounds.height));
+    override func viewWillAppear(_ animated: Bool) {
+        let galleryView = ZJGalleryView(frame: CGRect(x: 0,y: 0,width: self.view.bounds.width,height: self.view.bounds.height));
         imagesView.addSubview(galleryView);
         //设置占位图片
         galleryView.imageHoler = UIImage(named: "photo_loading");
@@ -42,11 +42,11 @@ class ViewController: UIViewController,ZJGalleryViewDelegate,ZJGalleryViewDataSo
         galleryView.generate();
     }
     
-    func numberOfImagesInGalleryView(galleryView: ZJGalleryView!) -> Int {
+    func numberOfImages(in galleryView: ZJGalleryView!) -> Int {
         return self.images.count;
     }
     
-    func imageURLAtIndex(index: Int32, inGalleryView galleryView: ZJGalleryView!) -> ZJGalleryImage! {
+    func imageURL(at index: Int32, in galleryView: ZJGalleryView!) -> ZJGalleryImage! {
         let imageItem = self.images[Int(index)];
         if(imageItem["type"] == "local"){
             return ZJGalleryImage(local: true, url: imageItem["url"]!);
@@ -55,7 +55,7 @@ class ViewController: UIViewController,ZJGalleryViewDelegate,ZJGalleryViewDataSo
         }
     }
     
-    func didSelectImageInGalleryView(galleryView: ZJGalleryView!, atIndex index: Int) {
+    func didSelectImage(in galleryView: ZJGalleryView!, at index: Int) {
         print("选择了图片\(index)")
     }
     
